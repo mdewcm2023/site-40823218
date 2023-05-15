@@ -383,7 +383,29 @@ for i in data:
 <p><img alt="" height="319" src="/images/54.png" width="400"/></p>
 <p>測試網站是否可以開啟</p>
 <p><img alt="" height="219" src="/images/55.png" width="400"/></p>
-<p> </p>
+<h1> W13在stud2建立動態網站</h1>
+<p>開啟ipv6</p>
+<p><img alt="" height="523" src="/images/123123.jpg" width="400"/></p>
+<p>在 stud2 主機建立倉儲的動態系統:</p>
+<p>ssh<span> wcm40823218@stud2.cycu.org</span>登入後, 以ssh-keygen 在 .ssh 目錄下建立 id_rsa,<span> </span><span>id_rsa.pub</span></p>
+<p><span><img alt="" height="314" src="/images/1231231.jpg" width="400"/></span></p>
+<p><span>sftp <span>wcm40823218@stud2.cycu.org</span><span> 登入後, cd .ssh 然後以 put<span> </span></span><span>config</span><span><span> </span>將代理主機的設定檔案送到 stud2 帳號下的 .ssh 目錄, 使用 get id_rsa.pub 將公鑰取下送到 Github 帳號下的 settings 中的 SSH and GPG 設定區.</span></span></p>
+<p><span><span><img alt="" height="108" src="/images/1231233.jpg" width="400"/></span></span></p>
+<p><span><span><img alt="" height="131" src="/images/1231234.jpg" width="400"/></span></span></p>
+<p>ssh 登入帳號後, 在所在目錄 /home/帳號/, 以 git clone<span> git@github.com:mdewcm2023/site-40823218.git</span> site</p>
+<p>cd site</p>
+<p>利用<span>chmod u+x acp</span>, 將 acp 設為 user 可以執行</p>
+<p><img alt="" height="149" src="/images/1231235.jpg" width="400"/></p>
+<p>以 sftp get 取下 repo 目錄下的 waitress_server.py</p>
+<p>在 Windows 編輯 waitress_server.py, 之後存為 server.py, 再送回 repo 目錄下</p>
+<p><img alt="" height="44" src="/images/1231236.jpg" width="400"/><img alt="" height="519" src="/images/1231237.jpg" width="400"/></p>
+<p><span>ssh 遠端登入到 site 目錄下, 執行 hupper3 -m server.py</span></p>
+<p><span><img alt="" height="32" src="/images/1231238.jpg" width="400"/></span></p>
+<p><img alt="" height="345" src="/images/1231239.jpg" width="400"/></p>
+<p></p>
+<p><span></span></p>
+<p><span></span></p>
+<p></p>
 <div id="brython_div2">
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </div>
